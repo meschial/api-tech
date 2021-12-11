@@ -272,6 +272,7 @@ export default {
       if (this.fields.id === null) {
         this.newDeveloper()
       }
+      this.resetForm()
     },
     newDeveloper () {
       const self = this
