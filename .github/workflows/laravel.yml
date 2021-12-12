@@ -25,7 +25,7 @@ jobs:
     - name: Directory Permissions
       run: cd /home/runner/work/api-tech/api-tech/backend && chmod -R 777 storage bootstrap/cache
     - name: Create Database
-      run: cd /home/runner/work/api-tech/api-tech/backend && |
+      run: cd /home/runner/work/api-tech/api-tech/backend &&
         mkdir -p database
         touch database/database.sqlite
     - name: Execute tests (Unit and Feature tests) via PHPUnit
