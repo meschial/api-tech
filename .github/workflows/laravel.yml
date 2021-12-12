@@ -17,7 +17,9 @@ jobs:
         php-version: '8.0'
     - uses: actions/checkout@v2
     - name: Cd Backend
-      run: pwd
+      run: pwd && ls -la && cd .. && pwd && ls -la
+    - name: Cd Backend 2
+      run: cd backend
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies
